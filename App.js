@@ -23,7 +23,8 @@ import HomeScreen from './screens/HomeScreen';
 import CartScreen from './screens/CartScreen';
 import ChecklistScreen from './screens/ChecklistScreen';
 import AccountScreen from './screens/AccountScreen';
-import AddScreen from './screens/AddScreen';
+import EventStudio from './screens/EventStudio';
+import EventPackages from './screens/eventstudio/EventPackages'; // <-- Make sure path is correct
 import SplashOnboardingScreen from './screens/SplashOnboardingScreen';
 
 // Font Imports
@@ -105,6 +106,8 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Splash" component={SplashOnboardingScreen} />
         <Stack.Screen name="MainTabs" component={MainTabs} />
+        {/* Event Studio Flow Stack */}
+        <Stack.Screen name="EventPackages" component={EventPackages} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -119,7 +122,6 @@ function MainTabs() {
           headerShown: false,
           tabBarShowLabel: false,
           tabBarStyle: styles.floatingTab,
-          // ADDED: This provides internal padding for the icons
           tabBarItemStyle: {
             paddingTop: Platform.OS === 'ios' ? 0 : 30, 
           }
@@ -149,7 +151,7 @@ function MainTabs() {
         />
         <Tab.Screen 
           name="Add" 
-          component={AddScreen}
+          component={EventStudio}
           options={{
             tabBarButton: (props) => (
               <TouchableOpacity activeOpacity={0.9} style={styles.centerButtonContainer} onPress={props.onPress}>
@@ -238,9 +240,9 @@ const styles = StyleSheet.create({
   floatingTab: {
     position: 'absolute',
     bottom: 25,
-    left: 15,
-    right: 15,
-    backgroundColor: '#630d2d',
+    marginLeft: 15,
+    marginRight: 15,
+    backgroundColor: '#000000',
     borderRadius: 35,
     height: 75,
     borderTopWidth: 0,
@@ -269,7 +271,6 @@ const styles = StyleSheet.create({
     borderWidth: 5,
     borderColor: '#FDF7F8', 
     elevation: 8,
-    // Ensure it sits above other items
     zIndex: 1,
   },
   activeDot: {
