@@ -98,7 +98,6 @@ export default function ChecklistScreen({ navigation }) {
       />
 
       <SafeAreaView style={styles.safeContainer}>
-        {}
         <View style={[styles.header, { paddingHorizontal: dynamicPadding }]}>
           <View style={styles.headerLeftContainer}>
             <TouchableOpacity
@@ -135,7 +134,6 @@ export default function ChecklistScreen({ navigation }) {
           ]}
           showsVerticalScrollIndicator={false}
         >
-          {}
           <View style={styles.progressCard}>
             <View style={styles.progressHeaderRow}>
               <View>
@@ -159,7 +157,6 @@ export default function ChecklistScreen({ navigation }) {
               </View>
             </View>
 
-            {}
             <View style={styles.progressBarTrack}>
               <View
                 style={[
@@ -186,7 +183,6 @@ export default function ChecklistScreen({ navigation }) {
             </View>
           </View>
 
-          {}
           <View style={styles.filterPillWrapper}>
             <ScrollView
               horizontal
@@ -221,7 +217,6 @@ export default function ChecklistScreen({ navigation }) {
             </ScrollView>
           </View>
 
-          {}
           <View style={styles.tasksContainer}>
             {filteredTasks.length > 0 ? (
               filteredTasks.map((item) => (
@@ -236,7 +231,6 @@ export default function ChecklistScreen({ navigation }) {
                   onPress={() => toggleTaskCompletion(item.id)}
                 >
                   <View style={styles.taskCardLeftContent}>
-                    {}
                     <View style={styles.checkboxContainer}>
                       {item.completed ? (
                         <CheckCircle2

@@ -120,7 +120,6 @@ export default function CartScreen({ navigation }) {
         translucent={false}
       />
 
-      {}
       <Modal
         animationType="fade"
         transparent={true}
@@ -131,7 +130,6 @@ export default function CartScreen({ navigation }) {
           <View
             style={[styles.modalCardContainer, { width: windowWidth * 0.84 }]}
           >
-            {}
             <View
               style={[
                 styles.modalIconWrapper,
@@ -157,7 +155,6 @@ export default function CartScreen({ navigation }) {
               )}
             </View>
 
-            {}
             <Text style={[styles.modalTitle, { fontSize: normalize(17) }]}>
               {isCheckoutAlert ? "Secure Checkout" : "Remove item from Bag?"}
             </Text>
@@ -169,7 +166,6 @@ export default function CartScreen({ navigation }) {
                 : "This action will instantly delete this designer selection from your custom celebration list."}
             </Text>
 
-            {}
             <View style={styles.modalButtonRow}>
               <TouchableOpacity
                 style={styles.modalSecondaryBtn}
@@ -213,7 +209,6 @@ export default function CartScreen({ navigation }) {
       </Modal>
 
       <SafeAreaView style={styles.safeContainer}>
-        {}
         <View style={styles.header}>
           <View style={styles.headerLeft}>
             <TouchableOpacity
@@ -257,7 +252,6 @@ export default function CartScreen({ navigation }) {
             ]}
             showsVerticalScrollIndicator={false}
           >
-            {}
             <View style={{ marginBottom: dynamicCardGap }}>
               {cartItems.map((item) => (
                 <View
@@ -349,7 +343,6 @@ export default function CartScreen({ navigation }) {
               ))}
             </View>
 
-            {}
             <View style={styles.drawerCard}>
               <View style={styles.pricingContainer}>
                 <View style={styles.priceRow}>

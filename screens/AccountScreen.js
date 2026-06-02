@@ -112,7 +112,6 @@ export default function AccountScreen({ navigation }) {
       />
 
       <SafeAreaView style={styles.safeContainer}>
-        {}
         <View style={[styles.header, { paddingHorizontal: dynamicPadding }]}>
           <View style={styles.headerLeftContainer}>
             <TouchableOpacity
@@ -149,7 +148,6 @@ export default function AccountScreen({ navigation }) {
           ]}
           showsVerticalScrollIndicator={false}
         >
-          {}
           <View style={styles.profileCard}>
             <View style={styles.avatarRow}>
               <View style={styles.avatarOuterRing}>
@@ -190,7 +188,6 @@ export default function AccountScreen({ navigation }) {
 
             <View style={styles.profileDivider} />
 
-            {}
             <View style={styles.countdownMetricRow}>
               <View style={styles.metricBlock}>
                 <Text style={[styles.metricValue, { fontSize: normalize(16) }]}>
@@ -212,7 +209,6 @@ export default function AccountScreen({ navigation }) {
             </View>
           </View>
 
-          {}
           <Text
             style={[
               styles.sectionHeading,
@@ -227,7 +223,6 @@ export default function AccountScreen({ navigation }) {
             {REGISTRY_OPTIONS.map(renderMenuOption)}
           </View>
 
-          {}
           <Text
             style={[
               styles.sectionHeading,
@@ -242,7 +237,6 @@ export default function AccountScreen({ navigation }) {
             {SYSTEM_OPTIONS.map(renderMenuOption)}
           </View>
 
-          {}
           <TouchableOpacity
             style={styles.logoutBtn}
             activeOpacity={0.75}

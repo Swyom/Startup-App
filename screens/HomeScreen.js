@@ -92,7 +92,6 @@ export default function HomeScreen({ navigation }) {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}
       >
-        {}
         <Animated.View
           style={[
             styles.heroSection,
@@ -103,7 +102,6 @@ export default function HomeScreen({ navigation }) {
           <Text style={styles.headerTitle}>Find Your Perfect{"\n"}Vendors</Text>
         </Animated.View>
 
-        {}
         <View style={styles.sectionHeader}>
           <Text style={styles.sectionTitle}>Recommended for you</Text>
           <TouchableOpacity>
@@ -111,7 +109,6 @@ export default function HomeScreen({ navigation }) {
           </TouchableOpacity>
         </View>
 
-        {}
         <View style={styles.vendorList}>
           {VENDORS.map((vendor) => (
             <TouchableOpacity

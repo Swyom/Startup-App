@@ -438,14 +438,11 @@ export default function EventStudio() {
           <View style={styles.sliderContainer}>
             <Text style={styles.sliderValueText}>{formData.guests} Guests</Text>
 
-            {}
             <View style={styles.sliderTrackWrapper}>
-              {}
               <View style={styles.sliderTrackBackground} />
-              {}
+
               <Animated.View style={[styles.sliderTrackFill, { width: pan }]} />
 
-              {}
               {SLIDER_STEPS.map((_, i) => (
                 <View
                   key={i}
@@ -453,7 +450,6 @@ export default function EventStudio() {
                 />
               ))}
 
-              {}
               <Animated.View
                 {...panResponder.panHandlers}
                 style={[

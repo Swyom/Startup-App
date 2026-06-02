@@ -43,14 +43,12 @@ export default function VendorProfile({ route, navigation }) {
 
   return (
     <View style={styles.masterContainer}>
-      {}
       <StatusBar
         barStyle="light-content"
         translucent
         backgroundColor="transparent"
       />
 
-      {}
       <View style={[styles.mediaContainer, { height: dynamicBannerHeight }]}>
         <Image
           source={{ uri: vendor.image }}
@@ -58,10 +56,8 @@ export default function VendorProfile({ route, navigation }) {
           resizeMode="cover"
         />
 
-        {}
         <View style={styles.imageOverlayShield} />
 
-        {}
         <View style={[styles.floatingHeaderActions, { left: dynamicPadding }]}>
           <TouchableOpacity
             style={styles.circleBackBtn}
@@ -73,7 +69,6 @@ export default function VendorProfile({ route, navigation }) {
         </View>
       </View>
 
-      {}
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={[
@@ -130,7 +125,6 @@ export default function VendorProfile({ route, navigation }) {
         </View>
       </ScrollView>
 
-      {}
       <View
         style={[
           styles.fixedActionFooter,
