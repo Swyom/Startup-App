@@ -1,9 +1,9 @@
-import React, { useRef, useState } from 'react';
-import { View, StyleSheet, Dimensions } from 'react-native';
-import { Video, ResizeMode } from 'expo-av';
-import { useNavigation } from '@react-navigation/native';
+import React, { useRef, useState } from "react";
+import { View, StyleSheet, Dimensions } from "react-native";
+import { Video, ResizeMode } from "expo-av";
+import { useNavigation } from "@react-navigation/native";
 
-const { width, height } = Dimensions.get('window');
+const { width, height } = Dimensions.get("window");
 
 export default function SplashOnboardingScreen() {
   const navigation = useNavigation();
@@ -13,8 +13,7 @@ export default function SplashOnboardingScreen() {
   const handlePlaybackStatusUpdate = (playbackStatus) => {
     setStatus(() => playbackStatus);
     if (playbackStatus.didJustFinish) {
-      // Automatically navigate when video finishes
-      navigation.replace('MainTabs');
+      navigation.replace("Login");
     }
   };
 
@@ -23,7 +22,7 @@ export default function SplashOnboardingScreen() {
       <Video
         ref={videoRef}
         style={styles.video}
-        source={require('../assets/SplashScreen.mp4')}
+        source={require("../assets/SplashScreen.mp4")}
         resizeMode={ResizeMode.COVER}
         shouldPlay
         isLooping={false}
@@ -36,12 +35,12 @@ export default function SplashOnboardingScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: "#000",
   },
   video: {
     width: width,
     height: height,
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     left: 0,
     bottom: 0,
